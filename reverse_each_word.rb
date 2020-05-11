@@ -12,7 +12,7 @@ def reverse_each_word(str)
       reverse_word.unshift(character)
     end
   end
-  reverse_sentence.join(" ")
+  reverse_sentence
 end
 
 p reverse_each_word("Hello World, I'm Haleigh")
