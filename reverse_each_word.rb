@@ -27,4 +27,4 @@ def reverse_each_word(str)
   reverse_sentence
 end
 
-puts reverse_each_word("Hello World, I'm Haleigh")
+p reverse_each_word("Hello World, I'm Haleigh")
