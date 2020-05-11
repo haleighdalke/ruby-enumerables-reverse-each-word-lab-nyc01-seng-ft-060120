@@ -8,6 +8,7 @@ def reverse_each_word(str)
     if character == " "
       #append the word to the sentence
       reverse_sentence.push(reverse_word)
+      reverse_word = []
     else
       reverse_word.unshift(character)
     end
