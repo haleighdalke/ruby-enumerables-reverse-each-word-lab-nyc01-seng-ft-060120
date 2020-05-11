@@ -21,7 +21,7 @@ def reverse_each_word(str)
     end
   end
   reverse_sentence.each do |word|
-    new_sentence = word.join
+    new_sentence = new_sentence + word.join + " "
   end
   new_sentence
 end
