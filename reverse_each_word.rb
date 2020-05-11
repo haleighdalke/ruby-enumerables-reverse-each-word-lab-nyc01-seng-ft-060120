@@ -4,6 +4,7 @@ def reverse_each_word(str)
   array_of_characters = str.chars
   reverse_word = []
   reverse_sentence = []
+  new_sentence = ""
   array_of_characters.each do |character|
     if character == " "
       #append the word to the sentence
@@ -19,7 +20,10 @@ def reverse_each_word(str)
       end
     end
   end
-  reverse_sentence
+  reverse_sentence.each do |word|
+    new_sentence = word.join + " "
+  end
+  new_sentence
 end
 
-p reverse_each_word("Hello World, I'm Haleigh")
+puts reverse_each_word("Hello World, I'm Haleigh")
