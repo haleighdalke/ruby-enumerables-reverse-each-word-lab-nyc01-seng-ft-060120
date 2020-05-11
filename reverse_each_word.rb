@@ -9,4 +9,4 @@ def reverse_each_word(str)
   reverse_array
 end
 
-puts reverse_each_word("Hello World")
+p reverse_each_word("Hello World")
