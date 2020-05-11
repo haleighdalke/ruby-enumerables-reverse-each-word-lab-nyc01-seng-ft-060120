@@ -8,15 +8,11 @@ def reverse_each_word(str)
     if character == " "
       #append the word to the sentence
       reverse_sentence.push(reverse_word)
-    elsif condition
-
     else
-
+      reverse_word.unshift(character)
     end
-
-    reverse_array.unshift(character)
   end
-  reverse_array
+  reverse_sentence.join(" ")
 end
 
 p reverse_each_word("Hello World")
