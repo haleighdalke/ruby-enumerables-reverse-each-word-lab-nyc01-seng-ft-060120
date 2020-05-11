@@ -8,9 +8,15 @@ def reverse_each_word(str)
     if character == " "
       #append the word to the sentence
       reverse_sentence.push(reverse_word)
+
       reverse_word = []
     else
+      if character == array_of_characters[-1] #if it's the last element
+        reverse_word.unshift(character)
+        reverse_sentence.push(reverse_word)
+      else
       reverse_word.unshift(character)
+      end
     end
   end
   reverse_sentence
