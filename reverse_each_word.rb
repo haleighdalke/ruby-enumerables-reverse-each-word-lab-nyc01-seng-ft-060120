@@ -15,4 +15,4 @@ def reverse_each_word(str)
   reverse_sentence.join(" ")
 end
 
-p reverse_each_word("Hello World")
+p reverse_each_word("Hello World, I'm Haleigh")
