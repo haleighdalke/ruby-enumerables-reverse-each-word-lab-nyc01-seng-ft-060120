@@ -1,6 +1,7 @@
 
 
 def reverse_each_word(str)
+  new_sentence = ""
   array_of_words = str.split(" ") #creates an array containing just the words as strings
   array_of_words = array_of_words.collect do |word|
     array_of_chars = word.chars  #create an array of characters in the word
@@ -9,7 +10,7 @@ def reverse_each_word(str)
     array_of_chars.collect do |character|
       new_word.unshift(character)
     end
-    p new_word
+
   end
 
 end
