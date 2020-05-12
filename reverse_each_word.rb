@@ -2,7 +2,9 @@
 
 def reverse_each_word(str)
   array_of_words = str.split(" ") #creates an array containing just the words as strings
-  p array_of_words
+  array_of_words = array_of_words.collect do |word|
+    word.chars
+  end
 
 end
 
