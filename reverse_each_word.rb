@@ -13,7 +13,7 @@ def reverse_each_word(str)
     new_word.join
     word = new_word
   end
-
+  array_of_words.join(" ")
 end
 
 p reverse_each_word("Hello world, I'm Haleigh")
