@@ -6,7 +6,7 @@ def reverse_each_word(str)
 
 end
 
-
+reverse_each_word("Hello world, I'm Haleigh")
 # array_of_characters = str.chars
 # reverse_word = []
 # reverse_sentence = []
