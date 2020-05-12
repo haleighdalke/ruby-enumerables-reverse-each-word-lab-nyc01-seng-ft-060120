@@ -24,6 +24,7 @@ def reverse_each_word(str)
     new_sentence += word.join
     if word != reverse_sentence[-1]
       new_sentence += " "
+    end
   end
   new_sentence
 end
