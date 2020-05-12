@@ -11,7 +11,6 @@ def reverse_each_word(str)
       new_word.unshift(character)
     end
     word = new_word.join
-    p word
   end
   array_of_words.join(" ")
 end
