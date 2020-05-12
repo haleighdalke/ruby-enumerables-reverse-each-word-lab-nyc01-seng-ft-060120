@@ -5,10 +5,10 @@ def reverse_each_word(str)
   array_of_words = array_of_words.collect do |word|
     word.chars
   end
-
+  array_of_words
 end
 
-reverse_each_word("Hello world, I'm Haleigh")
+p reverse_each_word("Hello world, I'm Haleigh")
 # array_of_characters = str.chars
 # reverse_word = []
 # reverse_sentence = []
