@@ -3,9 +3,13 @@
 def reverse_each_word(str)
   array_of_words = str.split(" ") #creates an array containing just the words as strings
   array_of_words = array_of_words.collect do |word|
-    word.chars
+    array_of_chars = word.chars  #create an array of characters in the word
+    #for every character in the word, add to the beginning of new word
+    new_word = array_of_chars.collect do |character|
+      new_word.unshift(character)
+    end
   end
-  array_of_words
+
 end
 
 p reverse_each_word("Hello world, I'm Haleigh")
