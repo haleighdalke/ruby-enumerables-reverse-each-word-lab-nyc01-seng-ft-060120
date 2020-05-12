@@ -1,6 +1,19 @@
 
 
 def reverse_each_word(str)
+  array_of_words = str.split(" ")
+
+
+
+
+
+
+
+
+
+
+
+
   array_of_characters = str.chars
   reverse_word = []
   reverse_sentence = []
