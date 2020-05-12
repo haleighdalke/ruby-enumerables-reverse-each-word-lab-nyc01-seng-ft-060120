@@ -5,9 +5,11 @@ def reverse_each_word(str)
   array_of_words = array_of_words.collect do |word|
     array_of_chars = word.chars  #create an array of characters in the word
     #for every character in the word, add to the beginning of new word
-    new_word = array_of_chars.collect do |character|
+    new_word = []
+    array_of_chars.collect do |character|
       new_word.unshift(character)
     end
+    p new_word
   end
 
 end
