@@ -7,42 +7,8 @@ def reverse_each_word(str)
     array_of_chars = word.chars  #create an array of characters in the word
     #for every character in the word, add to the beginning of new word
     new_word = []
-    array_of_chars.collect do |character|
-      new_word.unshift(character)
-    end
+    array_of_chars.collect { |character| new_word.unshift(character) }
     word = new_word.join
   end
   array_of_words.join(" ")
 end
-
-p reverse_each_word("Hello world, I'm Haleigh")
-# array_of_characters = str.chars
-# reverse_word = []
-# reverse_sentence = []
-# new_sentence = ""
-# array_of_characters.each do |character|
-#   if character == " "
-#     #append the word to the sentence
-#     reverse_sentence.push(reverse_word)
-#
-#     reverse_word = []
-#   else
-#     if character == array_of_characters[-1] #if it's the last element
-#       reverse_word.unshift(character)
-#       reverse_sentence.push(reverse_word)
-#     else
-#     reverse_word.unshift(character)
-#     end
-#   end
-# end
-# reverse_sentence.each do |word|
-#   new_sentence += word.join
-#   if word != reverse_sentence[-1]
-#     new_sentence += " "
-#   end
-# end
-# new_sentence
-# end
-#
-# p reverse_each_word("Hello World, I'm Haleigh")
-# ###
